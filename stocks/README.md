@@ -1,6 +1,6 @@
 # Angular - simple stock API project
 
-![alt text](https://previews.dropbox.com/p/thumb/AAlcmbQR6qRGsMkRRk_cHMkpmxyx7n2gxzLQKefaR0kmgHeiXLl42Rl8kdgiWM9VMMShat9rPvJ3wF0d7BRvuWdxoYs6l02xkIro5wMxaKQb5uKfVymEguVCIGVsLXPTdBtWL1J2JeJRaxNabBCrlloYjh15Yt3JRWLnZuUPpfWQNFBgi7h_Dim8wyKtaAKzBj5d9rk_4PCvMyx7lIDLA69raLT8-HjXsM7LPEPUEV_Ps9ShPpySdYoHZ_MFHab_8qtKInY-BQVjBUKlfqyBBTDQUAQlHNKYll-2t85Re7mK-BgQZEOmYFSP9oxd41yX33NUSP8TVm0aX8oRA2g2den1/p.png?fv_content=true&size_mode=5)
+![Stocks API image](http://bartekblog.prv.pl/stocks-api.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
