@@ -2,7 +2,14 @@
   <div class="mdl-cell mdl-cell--12-col" style="text-align: center" *ngIf="!stocks">
     Loading...
   </div>
-  <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
-    <app-summary [stock]="stock"></app-summary>
-  </div>
+  <ng-container *ngIf="!changed; else changedStocks">
+    <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
+      <app-summary [stock]="stock"></app-summary>
+    </div>
+  </ng-container>
+  <ng-template #changedStocks>
+    <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
+      <app-summary [stock]="stock"></app-summary>
+    </div>
+  </ng-template>
 </div>

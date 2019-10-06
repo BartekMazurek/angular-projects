@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, OnChanges} from '@angular/core';
 import { StocksService, StockInterface } from '../../service/stocks.service';
 
 @Component({
@@ -6,7 +6,9 @@ import { StocksService, StockInterface } from '../../service/stocks.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnChanges {
+
+  @Input() changed: Array<string>;
 
   stocks: Array<StockInterface>;
   symbols: Array<string>;
@@ -21,4 +23,11 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  ngOnChanges(): void {
+    if (this.changed) {
+      this.service.load(this.changed).subscribe( stocks => {
+        this.stocks = stocks;
+      });
+    }
+  }
 }
