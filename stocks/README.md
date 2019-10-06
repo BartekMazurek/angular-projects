@@ -2,6 +2,8 @@
 
 ![Stocks API image](http://bartekblog.prv.pl/stocks-api-preview.png)
 
+Simple stock API project that allows you to download stock prices from Yahoo Finance API in realtime.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
