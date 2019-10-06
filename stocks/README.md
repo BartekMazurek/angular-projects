@@ -1,5 +1,7 @@
 # Angular - simple stock API project
 
+![alt text](https://www.dropbox.com/home/GITHUB_IMAGES?preview=stocks-api.PNG)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
