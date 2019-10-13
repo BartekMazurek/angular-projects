@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { StocksService } from './service/stocks.service';
 import { FormsModule } from '@angular/forms';
+import { AppRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
@@ -19,7 +20,8 @@ import { ManageComponent } from './components/manage/manage.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutes
   ],
   providers: [StocksService],
   bootstrap: [AppComponent]
